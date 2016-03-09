@@ -3,8 +3,17 @@ package br.com.devmedia;
 import java.time.LocalDate;
 import java.util.function.UnaryOperator;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity
 public class Usuario {
+		@Id
+		@GeneratedValue(strategy=GenerationType.IDENTITY)
+		private Long id;
+		
 		private String nome;
 		private LocalDate dataNascimento;
 		private int numeroDoNome;
@@ -55,5 +64,13 @@ public class Usuario {
 		return reducao.apply(valor);
 		}
 
+		public Long getId() {
+			return id;
+		}
+
+		public void setId(Long id) {
+			this.id = id;
+		}
+		
 }
 
