@@ -15,7 +15,7 @@ import org.junit.experimental.theories.Theory;
 import org.junit.runner.RunWith;
 
 /**
- * Considere a tabela abaixo para validação dos cálculos:
+ * Considere a tabela abaixo para validacao dos calculos:
  *
  * 1 2 3 4 5 6 7 8 9
  * -----------------------
