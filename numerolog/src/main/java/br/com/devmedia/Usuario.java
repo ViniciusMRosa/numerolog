@@ -11,10 +11,8 @@ import javax.persistence.Id;
 @Entity
 public class Usuario {
 		@Id
-		@GeneratedValue(strategy=GenerationType.IDENTITY)
-		private Long id;
-		
 		private String nome;
+		
 		private LocalDate dataNascimento;
 		private int numeroDoNome;
 		private int numeroDataDataNascimento;
@@ -64,13 +62,7 @@ public class Usuario {
 		return reducao.apply(valor);
 		}
 
-		public Long getId() {
-			return id;
-		}
 
-		public void setId(Long id) {
-			this.id = id;
-		}
 		
 }
 
